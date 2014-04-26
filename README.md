@@ -32,7 +32,7 @@ $ find . -type f
 ./conf/app.conf
 ./conf/routes
 
-$ heroku create -b https://github.com/robfig/heroku-buildpack-go-revel.git
+$ heroku create -b https://github.com/revel/heroku-buildpack-go-revel.git
 ...
 ```
 
