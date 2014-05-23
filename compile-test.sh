@@ -21,8 +21,7 @@ it_installs_go() {
 }
 
 it_skips_go_compile_if_exists() {
-  GOVERSION=foo
-  mkdir -p cache/go-$GOVERSION/go
+  mkdir -p cache/go1.1/go
   compile | grep Using
   rm -rf build cache
 }
