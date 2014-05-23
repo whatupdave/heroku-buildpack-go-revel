@@ -139,6 +139,7 @@ else
 fi
 
 echo "-----> Running: revel build"
+go get github.com/revel/cmd/revel
 revel build $name $build/bin
 
 rm -rf $build/.heroku
