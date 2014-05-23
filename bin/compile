@@ -138,7 +138,11 @@ else
     go get -tags heroku ./...
 fi
 
+echo "-----> Running: revel build"
+revel build $name $build/bin
+
 rm -rf $build/.heroku
 
 mkdir -p $build/.profile.d
 echo 'PATH=$PATH:$HOME/bin' > $build/.profile.d/go.sh
+
